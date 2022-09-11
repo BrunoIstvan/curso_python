@@ -1,3 +1,8 @@
+'''
+If a class uses a non-data descriptor, Python will search the attribute in instance attributes first (instance.__dict__). 
+If Python doesn`t find the attribute in the instance attributes, it`ll use the data descriptor.
+'''
+
 import os
 
 
@@ -14,3 +19,6 @@ class Folder:
 
 folder = Folder('/')
 print('file count: ', folder.count)
+
+
+
